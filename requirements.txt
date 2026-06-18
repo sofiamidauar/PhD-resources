@@ -1,0 +1,21 @@
+# Packages imported by systematic_literature_review.py
+#
+# NOTE: versions are intentionally left UNPINNED. The analysis was originally
+# developed in Google Colab (April 2023) and I do not have a record of the
+# exact versions used. Pin these to your tested environment before relying on
+# reproducibility.
+#
+# IMPORTANT geopandas caveat:
+#   The script uses gpd.datasets.get_path('naturalearth_lowres'), which was
+#   REMOVED in geopandas 1.0 (2024). If you install geopandas>=1.0 that line
+#   will fail. Either pin geopandas<1.0 OR supply the Natural Earth dataset
+#   locally (see README). Verify against your own environment.
+
+pandas
+numpy
+matplotlib
+seaborn
+geopandas
+shapely
+country_converter
+openpyxl   # required by pandas to read .xlsx files
