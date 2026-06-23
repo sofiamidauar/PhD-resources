@@ -1,0 +1,36 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# --- Delft3D / WAQ model output & binaries (large; not for Git) ---
+*.map
+*.his
+*.hia
+*.nc
+*.vol
+*.tem
+*.vdf
+*.bin
+*.npz
+*.mat
+*.tek
+
+# --- Generated results / figures ---
+results_scenarios/
+*.png
+*.jpg
+*.jpeg
+*.pptx
+
+# --- Local model run directory, if placed inside the repo ---
+model_run/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
