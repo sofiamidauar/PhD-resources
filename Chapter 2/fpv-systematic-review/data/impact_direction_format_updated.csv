@@ -1,0 +1,26 @@
+process,class,increase_modelling,decrease_modelling,varies_modelling,no_change_modelling,increase_empirical,decrease_empirical,varies_empirical,no_change_empirical
+Evaporation,Physical,0,107,0,0,0,12,0,0
+Ice Cover,Physical,1,0,0,0,0,0,0,0
+Light Intensity,Physical,0,0,0,0,0,1,0,0
+Salinity,Physical,0,0,0,0,0,0,0,2
+Secchi Depth,Physical,0,0,0,0,3,0,0,0
+Stratification Duration,Physical,1,3,0,0,1,1,0,0
+Stratification Strength,Physical,1,3,0,0,1,2,0,0
+Suspended Solids,Physical,0,0,0,0,0,3,0,2
+Thermocline Depth,Physical,0,2,1,0,0,1,0,0
+Water Temperature,Physical,0,8,0,0,4,12,2,3
+Alkalinity,Chemical,1,0,0,0,0,0,0,0
+Biological Oxygen Demand,Chemical,0,0,0,0,0,5,0,1
+Conductivity,Chemical,0,0,0,0,1,1,1,0
+Contaminant,Chemical,0,0,0,0,0,0,0,0
+Dissolved Oxygen,Chemical,0,2,0,0,1,10,1,4
+Nitrogen,Chemical,2,2,0,0,5,5,0,3
+Oxidation-Reduction-Potential,Chemical,0,0,0,0,3,0,0,0
+pH,Chemical,2,0,0,0,1,5,0,4
+Phosphorus,Chemical,1,2,0,0,9,3,0,5
+Total Dissolved Solids,Chemical,0,0,0,0,0,1,0,0
+Total Organic Carbon,Chemical,0,1,0,0,2,1,0,0
+Total Photosynthetic Pigments,Chemical,0,0,0,0,0,2,0,1
+Aquatic Plants,Biological,0,0,0,0,0,1,0,0
+Fish,Biological,0,0,0,0,3,3,1,2
+Plankton,Biological,0,14,0,0,2,11,1,2

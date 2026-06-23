@@ -1,0 +1,21 @@
+process,yes,no,class
+Evaporation,37,14,Physical
+Temperature,17,34,Physical
+Plankton,13,38,Biological
+Dissolved Oxygen,12,39,Chemical
+Nutrients,11,40,Chemical
+pH,7,44,Chemical
+Biological Oxygen Demand,5,46,Chemical
+Stratification,5,46,Physical
+Fish,3,48,Biological
+Conductivity,2,49,Chemical
+Salinity,2,49,Physical
+Light Intensity,2,49,Physical
+Suspended Solids,2,49,Chemical
+Total Dissolved Solids,2,49,Chemical
+Total Organic Carbon,2,49,Chemical
+Oxidation-Reduction-Potential,1,50,Chemical
+Total Photosynthetic Pigments,1,50,Chemical
+Sediment Ressuspension,0,51,Chemical
+Contaminant,0,51,Chemical
+Ice Cover,1,52,Physical

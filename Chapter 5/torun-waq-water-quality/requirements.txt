@@ -1,0 +1,23 @@
+# Third-party packages imported by the notebooks (detected from import statements).
+#
+# Versions are intentionally UNPINNED: these notebooks were developed across
+# 2025-2026 on a Windows workstation and I do not have a record of the exact
+# environment. Pin to your tested versions before relying on reproducibility.
+
+numpy
+pandas
+scipy
+matplotlib
+xarray
+
+# xarray reads NetCDF via a backend that is NOT one of the imports above.
+# You need at least one of these installed for `xarray.open_dataset(...)` on
+# the WAQ NetCDF files to work. netCDF4 is the usual choice:
+netCDF4
+# (h5netcdf is an alternative backend if you prefer it.)
+
+# Required by pandas to read .xlsx measurement files (used in some tools):
+openpyxl
+
+# NOTE: not a Python dependency, but the analysis assumes Delft3D-WAQ / BLOOM
+# model output already exists. See README ("Data and model output — NOT included").

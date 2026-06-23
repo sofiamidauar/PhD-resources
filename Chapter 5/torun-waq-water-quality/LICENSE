@@ -1,0 +1,24 @@
+LICENSE — PLACEHOLDER, CHOOSE BEFORE MAKING PUBLIC
+===================================================
+
+No licence has been selected yet. Without an explicit licence, default
+copyright applies and others cannot legally reuse this code.
+
+Before making this repository public, replace this file with a licence of
+your choice. Common options for research code:
+
+  - MIT          : very permissive, minimal conditions
+  - Apache-2.0   : permissive, includes an explicit patent grant
+  - GPL-3.0      : copyleft, derivatives must stay open
+
+GitHub can add any of these for you: in the repo, click "Add file" ->
+"Create new file", name it LICENSE, and GitHub offers a licence picker.
+
+SEPARATE NOTE ON THE DATA:
+The files under data/ are a screening database referencing third-party
+publications. The coding/extraction is your work; the underlying papers are
+not. Consider adding a short data-use statement, and check any requirements
+from Lancaster University and from journals where related chapters may be
+published. (This is not legal advice.)
+
+Copyright (c) 2023-2026 Sofia Midauar G Rocha
