@@ -7,6 +7,12 @@ for the Torun Reservoir, including floating photovoltaic (FPV) scenarios.
 > Windows workstation against model output on a network drive; absolute paths
 > have been replaced with the placeholder `<MODEL_DIR>` (see *Paths* below).
 
+> **Radiation and wind forcing:** use only `forcing_remapped\*_remapped_upper.bin`.
+> The `*_fixed.bin` and `*_remapped_column.bin` versions are wrong, and FPV
+> scenario results made with them should not be used. See
+> [`tools/FORCING_FIX.md`](tools/FORCING_FIX.md) for what went wrong and how the
+> correct files were made and checked.
+
 ---
 
 ## Repository layout
@@ -30,6 +36,7 @@ for the Torun Reservoir, including floating photovoltaic (FPV) scenarios.
 | `WAQ_comprehensive_analysis_netcdf_20260616.ipynb` | Perimeter-averaged comprehensive analysis: defines the FPV_02 perimeter mask, computes daily/monthly perimeter-mean time series, species composition, Hovmöller depth profiles, surface maps. |
 | `WAQ_map_to_netcdf_20260602.ipynb` | Converts WAQ `.map` output to NetCDF, with validation. |
 | `compare_waq_radiation.ipynb` | Compares WAQ solar-radiation binary input files. |
+| `compare_baseline_his_20261008.ipynb` | Compares the `.his` output of a run with the calibrated Run42, per layer (`RadAve`, `Limit e`, phytoplankton) and for every variable on the depth-averaged locations. Used to verify the corrected forcing files; see `tools/FORCING_FIX.md`. Self-contained. |
 
 ### tools/
 
@@ -37,7 +44,9 @@ for the Torun Reservoir, including floating photovoltaic (FPV) scenarios.
 |----------|---------|
 | `conversion_binarytogrid_20260601.ipynb` | Converts WAQ binary output to a gridded form. |
 | `create_tekal.ipynb` | Reads measurement CSVs and writes Tekal (`.tek`) files for Delft3D QUICKPLOT. |
-| `fix_communicationfiles_clean.ipynb` | Repairs communication files (`.vol`, `.tem`, `.vdf`) and wind/radiation binaries by remapping from the 27,904-segment scheme to the 10,999 active-segment scheme. |
+| `fix_communicationfiles_clean.ipynb` | Repairs communication files (`.vol`, `.tem`, `.vdf`) by remapping from the 27,904-segment scheme to the 10,999 active-segment scheme. **Its wind/radiation output (`*_fixed.bin`) is wrong:** those files were truncated, not remapped. See `FORCING_FIX.md`. |
+| `forcing_column_to_upper_20261008.ipynb` | Makes the correct radiation and wind forcing files: converts `*_remapped_column.bin` to `forcing_remapped\*_remapped_upper.bin` (layers K ≤ 7 keep their value, deeper layers 0), with checks. See `FORCING_FIX.md`. |
+| `FORCING_FIX.md` | History of the forcing files (`_fixed` → `_remapped_column` → `_remapped_upper`), what is wrong with each, how the correct files were made and how the Baseline was verified. |
 
 ### archive/
 
