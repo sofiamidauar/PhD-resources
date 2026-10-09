@@ -38,6 +38,7 @@ for the Torun Reservoir, including floating photovoltaic (FPV) scenarios.
 | `conversion_binarytogrid_20260601.ipynb` | Converts WAQ binary output to a gridded form. |
 | `create_tekal.ipynb` | Reads measurement CSVs and writes Tekal (`.tek`) files for Delft3D QUICKPLOT. |
 | `fix_communicationfiles_clean.ipynb` | Repairs communication files (`.vol`, `.tem`, `.vdf`) and wind/radiation binaries by remapping from the 27,904-segment scheme to the 10,999 active-segment scheme. |
+| `verify_trim_and_rebuild_scenarios_20261009.ipynb` | Verifies the trimmed (10,999-segment) baseline communication files against the untrimmed FLOW output, checks FPV forcing `.bin` files, rebuilds scenario hydrodynamics (`.vol/.tem/.vdf/.flo/.are`) from each scenario's own FLOW output with the baseline segment/exchange mapping, audits existing clean folders, and runs model diagnostics (`RefDay`/day length, `Depth`, dry surface segment). |
 
 ### archive/
 
