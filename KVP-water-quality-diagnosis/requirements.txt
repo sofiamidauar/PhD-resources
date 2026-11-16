@@ -7,3 +7,4 @@ scipy
 jupyter
 python-docx
 python-pptx
+contextily   # optional: background map behind the sampling points
